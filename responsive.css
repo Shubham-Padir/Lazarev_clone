@@ -1,0 +1,239 @@
+@media (max-width:500px) {
+    nav{
+        height: 12vh;
+        position: fixed;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        padding: 2vw 10.5vw;
+        justify-content: space-between;
+        z-index: 10;
+        background-color: #111;
+    }
+
+    nav h1{
+        margin-top: 20px;
+        font-size: 6vw;
+    }
+
+    .nav-part2{
+        display: flex;
+        gap: 2vw;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1vh 0;
+        margin-bottom: 2.6;
+        position: relative;
+        z-index: 10;
+    }
+
+    .nav-part2 h4{
+        font-size: 1vw;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-bottom: 2.6vw;
+        display: none;
+    }
+
+    .nav-part2 h5 span{
+        font-size: .78vw;
+        display: inline-block;
+        transform: translateY(25px);
+        display: none;
+    }
+
+    .nav-bottom{
+        height: 0vh;
+        width: 80%;
+        background-color: #111;
+        position: absolute;
+        top: 100%;
+        z-index: 9;
+        border-bottom: 1px solid #fff;
+
+     }
+
+     nav button{
+        width: 100px;
+        background-color: #0da34e;
+        display: flex;
+        align-items: center;
+        padding: 12px 12px;
+        border-radius: 50px;
+        border: none;
+        font-size: 3vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 15px;
+        display: none;
+    }
+
+    nav button svg{
+        height: 3vw;
+        /* margin-left: .9vw; */
+        display: none;
+    }
+
+    nav svg{
+       
+        background-color: #0da34e;
+        display: flex;
+        align-items: center;
+        padding: 12px 12px;
+        border-radius: 50%;
+        border: none;
+        font-size: 100vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 15px;
+        height: 11vw;
+    }
+
+    nav i{
+        display: block;
+        margin-top: 15px;
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #ffffff21;
+    }
+
+    .page1{
+        height: 100vh;
+        width: 100%;
+        background-color: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+
+    
+.page1 h1{
+    font-size: 14vw;
+    text-transform: uppercase;
+    line-height: 8vh;
+    margin-left: 10px;
+}
+
+.page1 svg{
+    height: 11vw;
+    width: 11vw;
+    background-color: #0da34e;
+    border-radius: 50%;
+}
+
+.page1 p{
+   text-align: start;
+    width: 100%;
+    margin-top: 2vh;
+    line-height: 4.2vh;
+    margin-left: 10px;
+}
+
+.page1 p>span{
+    height: 2vh;
+    height: 2vh;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.moving-div{
+    height: 10vh;
+    width: 50%;
+    margin-top: 2vh;
+    position: absolute;
+    bottom: 10%;
+    white-space: nowrap;
+    padding: 2vw;
+    margin-left: 100px;
+    overflow: hidden;
+}
+
+
+.moving-div .move{
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.moving-div .move img{
+    height: 3vw;
+    margin: 0 1vw;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+    
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 0vw 0vw;
+    padding-bottom: 0vw;
+    display: flex;
+    align-items: center;
+  flex-direction: column;
+}
+
+.page2-left{
+    height: 70%;
+    width: 100%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0vw 0;
+}
+
+.page2-left p{
+    font-size: 6vw;
+    padding: 2vw;
+}
+
+.page2-left h5{
+    width: 90%;
+    line-height: 20px;
+    font-size: 4vw;
+    padding: 2vw;
+}
+
+.page2-right{
+    height: 100%;
+    width: 100%;
+}
+
+
+.right-elem h2{
+    font-size: 4.2vw;
+    padding: 3vw;
+    font-weight: 500;
+}
+
+.right-elem img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+    display: none;
+}
